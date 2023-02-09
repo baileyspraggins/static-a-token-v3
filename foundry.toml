@@ -9,8 +9,21 @@ remappings = [
 ]
 
 [rpc_endpoints]
+# main networks
 mainnet = "${RPC_MAINNET}"
 optimism = "${RPC_OPTIMISM}"
 avalanche = "${RPC_AVALANCHE}"
 polygon = "${RPC_POLYGON}"
+# test networks
+goerli = "${RPC_GOERLI}"
+mumbai = "${RPC_MUMBAI}"
+
+
+[etherscan]
+mainnet = { key = "${ETHERSCAN_API_KEY}", chain = "1" }
+goerli = { key = "${ETHERSCAN_API_KEY}", url = "https://api-goerli.etherscan.io/" }
+polygon = { key = "${POLYGONSCAN_API_KEY}", chain = "137" }
+mumbai = { key = "${POLYGONSCAN_API_KEY}", chain = "80001" }
+
+
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
