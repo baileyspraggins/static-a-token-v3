@@ -4,7 +4,7 @@ pragma solidity ^0.8.10;
 import "forge-std/Script.sol";
 import "../src/StaticATokenLM.sol";
 
-import {TransparentProxyFactory} from 'solidity-utils/contracts/transparent-proxy/TransparentProxyFactory.sol';
+import { TransparentProxyFactory } from 'solidity-utils/contracts/transparent-proxy/TransparentProxyFactory.sol';
 
 
 // Set up of Wrapper Deploy Script

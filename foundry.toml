@@ -20,10 +20,10 @@ mumbai = "${RPC_MUMBAI}"
 
 
 [etherscan]
-mainnet = { key = "${ETHERSCAN_API_KEY}", chainId = 1 }
-goerli = { key = "${ETHERSCAN_API_KEY}", chainId = 5 }
-polygon = { key = "${POLYGONSCAN_API_KEY}", chainId = 137 }
-mumbai = { key = "${POLYGONSCAN_API_KEY}", chainId = 80001 }
+mainnet = {key="${ETHERSCAN_API_KEY}",chainId=1}
+goerli = {key="${ETHERSCAN_API_KEY}",chainId=5}
+polygon={key="${ETHERSCAN_API_KEY_POLYGON}",chainId=137}
+mumbai={key="${ETHERSCAN_API_KEY_POLYGON}",chainId=80001}
 
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config

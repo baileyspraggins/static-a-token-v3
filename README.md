@@ -40,12 +40,12 @@ aTokenAddress=<aToken Implementation Address>
 2. Run the following command to deploy your token wrapper
 
 ```
-forge script script/AaveV3Wrapper.s.sol:AaveV3Wrapper --rpc-url $<.env Network RPC Variable> --broadcast --verify -vvvv
+forge script script/AaveV3Wrapper.s.sol:AaveV3Wrapper --rpc-url $<.env Network RPC Variable> --broadcast --verify --etherscan-api-key <Network name (corresponding with .toml)> -vvvv
 ```
 
-Below is an example of a deployment for aDAI on the Goerli Testnet
+### Below is an example of a deployment for Wrapped aDAI on the Goerli Testnet
 
-.env values:
+.env:
 
 ```
 # Values for token deployments
@@ -59,5 +59,17 @@ aTokenAddress=0xADD98B0342e4094Ec32f3b67Ccfd3242C876ff7a
 Deployment command:
 
 ```
-forge script script/AaveV3Wrapper.s.sol:AaveV3Wrapper --rpc-url $RPC_GOERLI --broadcast --verify
+forge script script/AaveV3Wrapper.s.sol:AaveV3Wrapper --rpc-url $RPC_GOERLI --broadcast --verify --etherscan-api-key goerli -vvvv
+```
+
+## Completed Testnet Deployment Examples
+
+```
+# Goerli Addresses
+waEthDAI: 0xbD5A20635F72063467E2EcF1394dEE13Ff7b689B
+waEthUSDC: 0xb260b280c1191BB057964f72B3649026922E19AF
+waEthWETH: 0xE42cbC828585B026e005143D71CE7C00A484f326
+
+# Mumbai Addresses
+waPolWMATIC: 0x5087A695BCc52d58fF2d1a5998DEF7f73715B8Ae
 ```
